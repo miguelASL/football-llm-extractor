@@ -21,7 +21,9 @@ def cargar_preguntas(path: Path) -> list[dict[str, str]]:
 
 
 def fila_resultado(pregunta_id: str, notas: str, tipo: str, r: dict[str, Any]) -> dict[str, Any]:
-    datos = r.get("datos") or {}
+    # El LLM (sobre todo prompt vago) a veces devuelve una lista JSON, no un objeto.
+    raw_datos = r.get("datos")
+    datos = raw_datos if isinstance(raw_datos, dict) else {}
     return {
         "id": pregunta_id,
         "notas": notas,

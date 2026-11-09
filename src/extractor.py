@@ -142,6 +142,24 @@ def extraer(
         resultado["error_parseo"] = str(exc)
         return resultado
 
+    # Si el modelo envuelve el objeto en una lista de un elemento, desempaquetar.
+    if isinstance(payload, list):
+        if len(payload) == 1 and isinstance(payload[0], dict):
+            payload = payload[0]
+        else:
+            resultado["error_validacion"] = (
+                "Se esperaba un objeto JSON; se recibió una lista."
+            )
+            resultado["datos"] = None
+            return resultado
+
+    if not isinstance(payload, dict):
+        resultado["error_validacion"] = (
+            f"Se esperaba un objeto JSON; se recibió {type(payload).__name__}."
+        )
+        resultado["datos"] = None
+        return resultado
+
     try:
         modelo = ExtraccionFutbol.model_validate(payload)
         resultado["validacion_ok"] = True

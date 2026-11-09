@@ -35,3 +35,28 @@ def test_extraer_sin_temporada_mock():
 def test_extraer_no_futbol_mock():
     r = extraer("¿Quién inventó la bombilla?", tipo_prompt="claro", mock=True)
     assert r["datos"]["error"] == "no_futbolistica"
+
+
+def test_fila_resultado_tolera_lista():
+    from src.evaluate import fila_resultado
+
+    fila = fila_resultado(
+        "1",
+        "nota",
+        "vago",
+        {
+            "pregunta": "x",
+            "parse_ok": True,
+            "validacion_ok": False,
+            "datos": [{"equipo": "Betis"}],
+            "prompt_tokens": 1,
+            "completion_tokens": 1,
+            "total_tokens": 2,
+            "latencia_ms": 1,
+            "error_parseo": None,
+            "error_validacion": "lista",
+        },
+    )
+    assert fila["es_valida"] is None
+    assert fila["equipo"] is None
+
