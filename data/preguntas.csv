@@ -1,0 +1,11 @@
+id,pregunta,notas
+1,"¿Cuántos goles marcó el Betis en casa en la 2023/24?",caso_completo
+2,"¿Quién ganó más partidos como visitante en la temporada 2022/23, el Sevilla o el Betis?",comparacion_dos_equipos
+3,"¿Cuántas tarjetas amarillas recibió el Barcelona en la 2021/22?",metrica_no_goles
+4,"Goles del Real Madrid fuera de casa 2023-2024",estilo_informal
+5,"¿Cuál fue el promedio de posesión del Athletic en la 2020/21?",metrica_posesion
+6,"¿Cuántos goles marcó el Málaga en casa?",sin_temporada
+7,"¿Cuántos puntos sumó el equipo de Pacheta en 2023/24?",equipo_ambiguo
+8,"¿Quién inventó la bombilla?",no_futbolistica
+9,"¿Cuántos goles encajó el Villarreal como local en la temporada 2019/20?",goles_en_contra
+10,"Dime los asistencias de Pedri con el Barça en la 2022/23",jugador_no_equipo

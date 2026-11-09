@@ -1,0 +1,1 @@
+"""Football LLM extractor package."""
