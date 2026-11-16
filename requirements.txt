@@ -2,3 +2,7 @@ openai>=1.40.0
 pydantic>=2.7.0
 python-dotenv>=1.0.1
 tenacity>=8.2.0
+
+# Semana 2: RAG local
+chromadb>=1.0.0
+sentence-transformers>=3.0.0

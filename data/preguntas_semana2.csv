@@ -1,0 +1,12 @@
+id,pregunta,tipo,esperado
+1,"¿Cuántos puntos sumó el Betis en la temporada 2023/24?",numerica,"Real Betis|2023/24|global|puntos=19"
+2,"¿Cuántos goles marcó el Sevilla en casa en la 2022/23?",numerica,"Sevilla FC|2022/23|local|goles_favor=12"
+3,"¿Cuántos goles encajó el Málaga fuera de casa en la 2023/24?",numerica,"Málaga CF|2023/24|visitante|goles_contra=15"
+4,"¿Cuántas victorias consiguió el Real Madrid en la 2022-2023?",numerica,"Real Madrid|2022/23|global|victorias=4"
+5,"¿Cuántos partidos perdió el Barça en la 2023/24?",numerica,"FC Barcelona|2023/24|global|derrotas=5"
+6,"¿Cómo se calculan los puntos de un equipo?",conceptual,diccionario_datos.md#puntos
+7,"¿Qué significa diferencia de goles?",conceptual,diccionario_datos.md#diferencia-de-goles
+8,"¿Qué es una portería a cero?",conceptual,diccionario_datos.md#porteria-a-cero
+9,"¿Cómo se normaliza el formato de una temporada?",conceptual,diccionario_datos.md#formato-de-temporada
+10,"¿Cuándo cuenta un partido como visitante?",conceptual,diccionario_datos.md#condicion-visitante
+11,"¿Quién ganó el Mundial de 2010?",fuera_corpus,sin_evidencia
