@@ -2,6 +2,7 @@
 .venv/
 __pycache__/
 .pytest_cache/
+chroma_db/
 results/*.csv
 *.pyc
 .Python
@@ -13,4 +14,3 @@ build/
 .idea/
 .vscode/
 *.log
-chroma_db/
